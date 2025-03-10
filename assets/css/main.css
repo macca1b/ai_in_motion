@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Rubik:400,600,400italic,600italic|Rubik:400,700");
+@import url("https://fonts.googleapis.com/css?family=Monda:400,600,400italic,600italic|Monda:400,700");
 /*
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
@@ -92,7 +92,7 @@ body {
 /* Type */
 body, input, select, textarea {
   color: #7f888f;
-  font-family: "Rubik", sans-serif;
+  font-family: "Monda", sans-serif;
   font-size: 13pt;
   font-weight: 400;
   line-height: 1.65; }
