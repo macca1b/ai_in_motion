@@ -27,6 +27,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
+#header .logo {
+  font-family: "Rubik", sans-serif;
+  /* other styles… */
+}
+
+
 body {
   line-height: 1; }
 
