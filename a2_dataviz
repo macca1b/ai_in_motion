@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>The BI data specialist in 2025</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Editorial</strong> by Brendan MacCabe</a>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+
+
+							<!-- Updated Blog-Style Content (Neutral, Reflective) 
+<section>
+  <header class="main">
+    <h1>The Data & Insight Specialist in 2025</h1>
+	  <p>... what's important & where are we going?</p>
+	  
+  <span class="image main"><img src="images/a1.jpg" alt="" /></span>
+
+  </header>
+-->
+
+<section id="banner">
+									<div class="content">
+										<header>
+											<h1>The Data & Insight Specialist in 2025</h1>
+											<p>... what's important & where are we going?</p>
+										</header>
+										<p>Over the past few years, the concept of an ideal data analytics role has evolved significantly and i wanted to brainstorm what's important today and where do i want to be as a data specialist in 2025. 
+	Now is an exciting time to explore what truly matters in data analytics, how data, insight and ai could blend to focus individuals on optimum effectiveness and how these elements come together to drive business success.</p>
+										<!--<p></p>-->
+									</div>
+									<span class="image object">
+										<img src="images/a1.jpg" alt="" />
+									</span>
+								</section>
+
+
+
+<!-- AI in Data Visualisation Article -->
+<section>
+  <header class="main">
+    <h1>Data Visualisation Meets AI: How Businesses Can Get Ahead in 2025</h1>
+  </header>
+
+  <span class="image main"><img src="images/a2.jpg" alt="AI in Data Visualisation" /></span>
+
+  <p>Data visualisation has always been fundamental in transforming complex data into clear, actionable insights. Traditionally, however, this process involved substantial manual effort, making it slow and resource-intensive. Today, artificial intelligence (AI) is rapidly changing the landscape, enhancing how organisations visualise and interact with their data. So, what's changing, and how can businesses effectively harness these advancements?</p>
+
+  <h2>How AI is Transforming Data Visualisation</h2>
+  <p><strong>Automating Complex Data Processes:</strong> AI dramatically reduces time spent on data preparation and visualisation creation, automating complex tasks like data cleaning and preprocessing. It frees analysts to focus more on strategic insight rather than manual processes.</p>
+
+  <p><strong>Enhanced Pattern Recognition and Predictive Analytics:</strong> AI-driven algorithms are capable of detecting subtle patterns, correlations, and anomalies that might go unnoticed. Predictive analytics further enhance these capabilities, providing forward-looking insights rather than just historical summaries.</p>
+
+  <p><strong>Conversational Analytics with NLP:</strong> Natural language processing (NLP) has transformed data visualisation tools, allowing users to interact with data through natural, conversational language. This democratises data insights, enabling everyone across an organisation to query and explore data intuitively.</p>
+
+  <h2>AI-Enhanced Tools Shaping the Industry</h2>
+  <p>Several tools are currently leading this revolution:</p>
+  <ul>
+    <li><a href="https://www.tableau.com/products/gpt" target="_blank">Tableau GPT and Tableau Pulse</a>: These tools integrate NLP for conversational queries and provide real-time predictive insights directly within dashboards.</li>
+    <li><a href="https://powerbi.microsoft.com" target="_blank">Microsoft Power BI Copilot</a>: Uses generative AI to automatically create and refine visualisations, simplifying complex data interactions.</li>
+    <li><a href="https://www.canva.com/magic/" target="_blank">Canva Magic Studio</a> and <a href="https://deepmind.google/gemini" target="_blank">Google's Gemini AI</a>: Simplify the creation of intuitive visual narratives without deep technical skills.</li>
+  </ul>
+
+  <h2>Case Study: Coca-Cola’s AI-Enhanced Analytics with Tableau</h2>
+  <p>Coca-Cola's implementation of generative AI through Tableau GPT since 2024 highlights the significant impact of AI on data visualisation. By integrating AI-driven analytics, Coca-Cola achieved measurable benefits, including:</p>
+  <ul>
+    <li><strong>Faster insights:</strong> Time required to create detailed visualisations reduced from days to mere minutes.</li>
+    <li><strong>Increased data adoption:</strong> Easy conversational interfaces allowed non-technical users to explore and interact with complex datasets independently.</li>
+    <li><strong>Proactive decision-making:</strong> Predictive insights from Tableau Pulse enabled proactive business responses to emerging trends and customer needs.</li>
+  </ul>
+  <p>Read more about Coca-Cola’s experience with Tableau GPT <a href="https://www.salesforce.com/news/stories/coca-cola-tableau-generative-ai-data-analytics/" target="_blank">here</a>.</p>
+
+  <h2>What AI Advancements Mean for End-Users</h2>
+  <p>The introduction of AI into data visualisation tools profoundly reshapes the user experience. End-users, regardless of technical skill, can now effortlessly interact with data, receive personalised insights, and make informed decisions swiftly. AI ensures analytics are not only insightful but also accessible and relevant to everyone in an organisation.</p>
+
+  <h2>The Future of Data Visualisation for Businesses</h2>
+  <p>Looking forward, businesses adopting AI-driven visualisation tools will see significant competitive advantages:</p>
+  <ul>
+    <li><strong>Generative AI Integration:</strong> Automatic creation of tailored visual content accelerates decision-making and enhances business agility.</li>
+    <li><strong>Real-time Decision-Making:</strong> Organisations can leverage predictive capabilities to make immediate, informed decisions and respond swiftly to emerging opportunities or threats.</li>
+    <li><strong>Competitive Differentiation:</strong> Early adoption of AI-driven analytics tools will provide clear strategic advantages, enabling businesses to stay ahead in their industries.</li>
+    <li><strong>Responsible and Ethical Practices:</strong> Transparent, ethical use of AI ensures sustainability, regulatory compliance, and maintains stakeholder trust.</li>
+  </ul>
+
+  <h2>Final Thoughts: Embracing AI for the Future</h2>
+  <p>The future of data visualisation is interactive, intuitive, and deeply embedded with AI. Companies that proactively embrace these innovations today are setting themselves up for sustained success. In an era defined by rapid technological advancement, those who move swiftly and strategically will thrive, leveraging AI-driven insights to stay ahead.</p>
+
+  <p>To delve deeper into AI-driven data visualisation and explore practical insights on implementing these strategies, visit other sections of the website.</p>
+
+
+
+</section>
+
+
+
+							
+
+
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="generic.html">Generic</a></li>
+										<li><a href="elements.html">Elements</a></li>
+										<li>
+											<span class="opener">Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Etiam Dolore</a></li>
+										<li><a href="#">Adipiscing</a></li>
+										<li>
+											<span class="opener">Another Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Maximus Erat</a></li>
+										<li><a href="#">Sapien Mauris</a></li>
+										<li><a href="#">Amet Lacinia</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Ante interdum</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+										<li class="icon solid fa-phone">(000) 000-0000</li>
+										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
+										Nashville, TN 00000-0000</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
