@@ -1263,6 +1263,29 @@ a.image {
     -ms-transform: scale(1.075);
     transform: scale(1.075); }
 
+
+
+
+.side-by-side {
+  display: flex;
+  gap: 10px; /* optional space between images */
+}
+
+.side-by-side img {
+  width: 50%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* List */
 ol {
   list-style: decimal;
