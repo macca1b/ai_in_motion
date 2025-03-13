@@ -1277,6 +1277,12 @@ a.image {
 }
 
 
+.image2 img {
+  width: 50%;
+  height: auto;
+}
+
+
 
 
 
