@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>The BI data specialist in 2025</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Editorial</strong> by Brendan MacCabe</a>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+
+
+<section id="banner">
+<div class="content">
+	<header>
+         <h1>Tableau navigating the AI boom</h1>
+	  <p>... How is our favourite data viz capability tooling up on the AI journey</p>
+</header>
+
+<p>Tableau is one of the most popular tools for turning raw data into interactive and visually appealing insights. 
+It was founded in 2003 by a group of Stanford researchers who wanted to make data analysis easier and more intuitive. 
+Over the years, it has grown massively, and after being acquired by Salesforce in 2019 for $15.7 billion, it's now used by millions of people worldwide—from small businesses to Fortune 500 companies. 
+Today, Tableau is stepping into the AI era with features like Tableau GPT and Einstein Discovery, which bring automation, natural language queries, and predictive analytics into the mix. 
+This means users can get instant insights, ask questions in plain English, and make smarter decisions without needing deep technical skills. 
+Let's take a dive into what is going on and what's ahead.</p>
+
+
+
+</div>
+<span class="image object">
+<img src="images/a5.jpg" alt="" />
+</span>
+
+</section>
+
+
+<section>
+<h1>What's happening with Tableau?</h1>
+	<p>AI in Tableau Accelerate your data culture with AI-powered insights.</p>
+	<p>AI Analytics is for everyone. 
+	<li>AI in Tableau democratizes data analysis and simplifies insights consumption at scale by bringing trusted generative AI to the entire Tableau platform.</li> 
+	<li>This next generation of Tableau accelerates time to value and reduces repetitive tasks for the data analyst with smart suggestions and in-product guidance.</li> 
+	<li>And because our AI is built on the Einstein Trust Layer, it allows administrators to enable trusted, ethical, and open AI-powered experiences without compromising data security and privacy. </li>
+	<li>AI in Tableau also empowers business users with smart, personalized, and contextualized insights in the flow of work.</li>
+ 	<br><br/>
+	AI in Tableau includes components Tableau Agent, Pulse, Next and the Einstein Trust layer... so lets break them down.
+	</p>
+	
+<h2>Introduction of Tableau Agent (formerly Einstein Copilot)</h2>
+
+  <p>In mid-2024, Tableau introduced <strong>Tableau Agent</strong>, an AI-driven assistant designed to streamline data analysis tasks. 
+	<li>Supercharge analysts... get from data preparation to visualization faster with a trusted advisor right in the flow of work.</li>
+	<li>This feature allows users to interact with data using natural language, enabling conversational data exploration, guided calculation creation, and smart suggestions for data visualization. <a href="https://www.tableau.com/blog/einstein-copilot-tableau-data-analysis-with-ai" target="_blank">Learn more</a></li>
+	<li>Accelerate data-driven decision making with a trusted AI assistant.</li> 
+	<li>With the power of Tableau Agent, new analysts can turn data into insights faster than ever.</li> 
+	<li>Breeze through data preparation by describing calculations in natural language. </li>
+	<li>Effortlessly generate comprehensive descriptions for datasources, workbooks, and tables in just one click.</li> 
+	<li>Create calculations and visualizations using conversational prompts, and get suggested questions to jumpstart data exploration.</li>
+	  </p>
+<br></br >
+
+<div class="side-by-side">
+  <img src="images/a2a.jpg" alt="Image 1" />
+  <img src="images/a2b.jpg" alt="Image 2" />
+</div>
+
+<br>
+	<br />
+										
+	
+<h2>What is Tableau Next?</h2>
+  <p>An advanced analytics platform built on the Salesforce Platform, Tableau Next integrates deeply with Agentforce to deliver personalized, contextual, and actionable insights across organizations. 
+	<li>It offers a flexible, API-first experience, enabling users to access insights seamlessly within their workflows.
+	<li>Tableau Next is a reimagined analytics platform built on the Salesforce Platform, designed to transform agile, self-service analytics using reusable and extensible components, semantic AI, and consistent data workflows.
+    	<li>Benefits - Empowers users to make strategic decisions quickly by delivering AI-powered insights directly within their workflows, enhancing efficiency and data-driven actions.
+    	<li>Future Outlook - As AI technology evolves, Tableau Next is expected to further enhance its co-pilot capabilities, including more advanced predictive analytics, deeper integration with other AI tools, and enhanced automation features, making data analysis more intuitive and efficient.
+	<li><a href="https://www.tableau.com/blog/what-is-tableau-next" target="_blank">Tableau Next - intro</a> <li><a href="https://www.tableau.com/blog/tableau-next-faq" target="_blank">Tableau Next FAQs</a></li>
+</p>
+
+	
+<h2>Launch of Tableau Pulse</h2>
+  <p>Empower business users... Gain distilled, meaningful insights from all your data to guide every decision.
+
+	<li>Tableau Pulse offers a reimagined data experience by providing personalized and contextual insights directly within users' workflows.</li> 
+	<li>It delivers automated analytics in plain language, anticipates user questions, and suggests new avenues for data exploration, thereby transforming how users engage with their data. <a href="https://www.tableau.com/products/artificial-intelligence" target="_blank">Discover Tableau Pulse</a></li>
+	<li>Powered by AI, Tableau Pulse is a reimagined data experience for business users that empowers every employee with smart, personalized, and contextual insights delivered directly in their flow of work.</li>
+	<li>Tableau Pulse surfaces automated analytics in plain language, proactively anticipates user questions and even suggests questions they might not have thought of otherwise. 
+	<li>Tableau Pulse transforms how people engage with their data, helping everyone in an organization put data at the center of every decision.</li>
+</p>
+
+
+<h2>Tableau Einstein Trust Layer</h2>
+  <p>Build on a trusted foundation... leverage all the productivity gains of generative AI without compromising on data security and privacy.
+	  
+	<li>AI in Tableau is built on the Einstein Trust Layer.</li> 
+	<li>This trust layer protects the privacy and safety of your data so you can unleash the power of AI without compromising on your security standards.</li>
+	<li>The layer is within the AI Cloud, which sets a new industry standard for trusted enterprise AI offering the benefits of generative AI securely.</li>
+	<li>The Einstein Trust Layer also makes AI Cloud open and extensible, optimizing the right model for the right task, while offering customer choice.</li>
+ <a href="https://www.salesforce.com/news/press-releases/2023/06/12/ai-cloud-news/" target="_blank">check it out... </a>
+
+				
+							
+<h2>Future Outlook... </h2>
+ <p>
+  <li>As AI technology continues to evolve, Tableau is expected to further enhance its co-pilot capabilities. </li>
+  <li>Future developments may include more advanced predictive analytics, deeper integration with other AI tools, and enhanced automation features, all aimed at making data analysis more intuitive and efficient.</li>
+  <li>These AI-driven enhancements signify Tableau's commitment to evolving its platform, ensuring users can harness the full potential of their data with greater ease and confidence.</li>
+
+Note: In 2019, Salesforce, a global leader in customer relationship management (CRM), acquired Tableau, a prominent data visualization company, in an all-stock deal valued at $15.7 billion. This acquisition merged Salesforce's robust CRM capabilities with Tableau's advanced data analytics and visualization tools, offering users enhanced insights and a more comprehensive understanding of customer data.
+ </p>
+
+
+</section>
+
+							
+
+
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="generic.html">Generic</a></li>
+										<li><a href="elements.html">Elements</a></li>
+										<li>
+											<span class="opener">Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Etiam Dolore</a></li>
+										<li><a href="#">Adipiscing</a></li>
+										<li>
+											<span class="opener">Another Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Maximus Erat</a></li>
+										<li><a href="#">Sapien Mauris</a></li>
+										<li><a href="#">Amet Lacinia</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Ante interdum</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+										<li class="icon solid fa-phone">(000) 000-0000</li>
+										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
+										Nashville, TN 00000-0000</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
