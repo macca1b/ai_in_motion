@@ -1268,11 +1268,11 @@ a.image {
 
 .side-by-side {
   display: flex;
-  gap: 20px; /* optional space between images */
+  gap: 50px; /* optional space between images */
 }
 
 .side-by-side img {
-  width: 40%;
+  width: 50%;
   height: auto;
 }
 
