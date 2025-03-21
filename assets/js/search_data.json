@@ -6,12 +6,17 @@
   },
   {
     "title": "Machine Learning 101",
-    "url": "/ai_in_motion/conv.html",
-    "content": "Machine learning is a branch of AI focused on building systems that learn from data."
+    "url": "/ai_in_motion/a10_conv.html",
+    "content": "Internal AI Copilot Use Cases
+Unilever (B2C Consumer Goods) – The company implemented Alex, a custom GPT-3 assistant, to assist consumer care and marketing teams with email management. Alex processes incoming emails, detects sentiment and intent, and drafts responses in the correct brand voice. This led to a 90% reduction in response time, significantly improving productivity. Additionally, another AI tool, Homer, automates the creation of product descriptions, demonstrating AI's role in streamlining internal content generation.
+Bloomreach (B2B SaaS) – To scale its content marketing efforts, Bloomreach equipped its four-person team with an AI writing assistant (Jasper). By automating first drafts and repetitive writing tasks, the team achieved a 113% increase in blog output and a 40% boost in organic traffic. This allowed them to expand content distribution without increasing headcount while focusing on high-level SEO strategy and creative work.
+Buzet (Marketing Agency) – A small agency leveraged the AI platform Scalenut as a research and copy assistant, automating time-consuming SEO research, content outlines, and draft generation. This resulted in a 25% increase in organic traffic, demonstrating how lean teams can maximize output by using AI to handle foundational tasks more efficiently.
+Ally Financial (B2C Banking) – The company developed Ally.ai, a proprietary GPT-powered assistant designed to assist the marketing team with planning and content-related tasks. During a one-month pilot, the AI delivered a 34% reduction in time spent on routine marketing tasks, translating into nearly 3,000 work hours saved annually. This efficiency gain enables the team to reallocate time toward strategic and creative work.
+Influencer Marketing Factory (B2B Agency) – By integrating an AI-driven outreach copilot through the platform Reply, the agency automated PR and link-building emails. This resulted in over 70 press mentions in major publications such as The Wall Street Journal and Adweek, with minimal manual effort. AI handled contact discovery and follow-ups, acting as an extended team member to significantly expand reach."
   },
   {
     "title": "AI in Healthcare",
-    "url": "/ai_in_motion/a11_conv.html",
+    "url": "/ai_in_motion/a3_future.html",
     "content": "AI is transforming diagnostics, robotic surgery, and patient care."
   }
 ]
