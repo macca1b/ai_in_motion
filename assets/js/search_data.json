@@ -13,5 +13,10 @@
     "title": "AI in Healthcare",
     "url": "/ai-in-action/healthcare.html",
     "content": "AI is transforming diagnostics, robotic surgery, and patient care..."
-  }
+  },
+  {
+    "title": "Bloomreach",
+    "url": "conv.html",
+    "content": "Bloomreach"
+  }  
 ]
