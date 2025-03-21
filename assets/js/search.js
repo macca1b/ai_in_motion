@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		if (query.length < 2) return;
 
-		fetch('/search-data.json')
+		fetch('assets/js/search_data.json')
 			.then(response => response.json())
 			.then(data => {
 				const results = data.filter(item => 
