@@ -6,12 +6,12 @@
   },
   {
     "title": "Machine Learning 101",
-    "url": "/ai_in_motion/learn/conv.html",
+    "url": "/ai_in_motion/conv.html",
     "content": "Machine learning is a branch of AI focused on building systems that learn from data."
   },
   {
     "title": "AI in Healthcare",
-    "url": "/ai_in_motion/ai-in-action/healthcare.html",
+    "url": "/ai_in_motion/a11_conv.html",
     "content": "AI is transforming diagnostics, robotic surgery, and patient care."
   }
 ]
