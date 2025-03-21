@@ -1,0 +1,17 @@
+[
+  {
+    "title": "What is AI?",
+    "url": "/about-ai/what-is-ai.html",
+    "content": "Artificial intelligence is the simulation of human intelligence processes by machines..."
+  },
+  {
+    "title": "Machine Learning 101",
+    "url": "/learn/machine-learning-101.html",
+    "content": "Machine learning is a branch of AI focused on building systems that learn from data..."
+  },
+  {
+    "title": "AI in Healthcare",
+    "url": "/ai-in-action/healthcare.html",
+    "content": "AI is transforming diagnostics, robotic surgery, and patient care..."
+  }
+]
