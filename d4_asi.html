@@ -11,7 +11,30 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .video-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .video-grid iframe {
+      flex: 1 1 calc(33.333% - 1rem);
+      height: 315px;
+      max-width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .video-grid iframe {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
 	</head>
+
+
+	
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -126,6 +149,18 @@ Still, there is no consensus. Some believe ASI could take centuries, while other
 							
 <section>
 
+
+<h2>Watch These Videos</h2>
+
+  <div class="video-grid">
+    <iframe src="https://www.youtube.com/embed/BAZ3LURzpGM" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/BAZ3LURzpGM" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/BAZ3LURzpGM" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+
+
+	
 
   <ul>
     <li>
