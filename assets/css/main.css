@@ -2314,27 +2314,5 @@ button,
 
 
 
-/*add some video... */
-
-
-.media-container {
-  position: relative;
-  width: 100%;
-  max-width: 800px; /* Adjust based on your layout */
-  margin: auto;
-  overflow: hidden;
-}
-
-.responsive-videoh {
-    width: 100%;  /* Adjust this value as needed */
-    height: auto;  /* Maintain aspect ratio */
-    align-items: center;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-
-
-
 
 
