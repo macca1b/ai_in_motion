@@ -2336,5 +2336,9 @@ button,
   border-radius: 0.375em; /* same as .image */
   display: block;
   object-fit: cover;
+  transition: transform 0.2s ease;
 }
 
+.video-thumb:hover {
+  transform: scale(1.075);
+}
