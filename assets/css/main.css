@@ -2325,6 +2325,7 @@ button,
             align-items: center;
             margin-bottom: 0px;
             margin-top: 0px;
+	    border-radius: 0.375em;
         }
 
 
@@ -2337,7 +2338,7 @@ button,
   display: block;
   object-fit: cover;
   transition: transform 0.2s ease;
-}
+  }
 
 .video-thumb:hover {
   transform: scale(1.075);
