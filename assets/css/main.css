@@ -2312,3 +2312,42 @@ button,
 }
 
 
+
+
+/*add some video... */
+
+/* Style the video container */
+#myVideo {
+  width: 100%; /* Make video responsive */
+  max-width: 800px; /* Set maximum width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Block display for proper spacing */
+  margin: 0 auto; /* Center the video */
+  border: 5px solid #ccc; /* Add a border around the video */
+  border-radius: 10px; /* Optional: Rounds the corners of the border */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds shadow for better aesthetics */
+}
+
+/* Style the video controls (Note: Styling native controls is limited and varies by browser) */
+video::-webkit-media-controls {
+  display: none; /* Hides default controls for customization */
+}
+
+/* Custom play button example */
+.custom-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+
+
