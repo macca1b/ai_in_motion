@@ -2316,11 +2316,14 @@ button,
 
 /*add some video... */
 
-/* Ensure the video maintains the same dimensions as the original image */
-#myVideo {
-  width: 100%; /* Adjust based on your layout */
-  height: auto; /* Maintains aspect ratio */
-  display: block; /* Removes any extra space below the video */
+.responsive-video {
+    width: 100%;  /* Adjust this value as needed */
+    height: auto;  /* Maintain aspect ratio */
+    align-items: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    /*aspect-ratio: 4 / 3;*/
+    object-fit: cover; /* or 'contain' if you prefer letterboxing */
 }
 
 
