@@ -2318,6 +2318,7 @@ button,
             max-width: 800px;
             margin: auto;
             overflow: hidden;
+            border-radius: 0.375em; 
         }
         .responsive-videoh {
             width: 100%;
