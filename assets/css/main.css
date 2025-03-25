@@ -2329,10 +2329,11 @@ button,
 
 
 /* Match video sizing with images */
+
 .video-thumb {
   width: 100%;
   height: auto;
-  border-radius: 0.35em; /* Matches your image corners */
+  border-radius: 0.375em; /* same as .image */
   display: block;
   object-fit: cover;
 }
