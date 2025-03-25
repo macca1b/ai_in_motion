@@ -23,6 +23,22 @@
 					flex: 1 1 100%;
 				}
 			}
+	.media-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .responsive-videoh {
+            width: 100%;
+            height: auto;
+            align-items: center;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+			
 		</style>
 	</head>
 	<body class="is-preload">
@@ -57,10 +73,13 @@
 							
 						</div>
 						<span class="image object">
-<div class="media-container">
-	 <video autoplay muted loop class="responsive-videoh"> <source src="https://raw.githubusercontent.com/macca1b/ai_in_motion/refs/heads/main/images/a11a.mp4" type="video/mp4"> Your browser does not support the video tag. </video>
-</div>
-						</span>
+							    <div class="media-container">
+        <video autoplay muted loop playsinline class="responsive-videoh">
+            <source src="images/a11a.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+							</span>
 
 						
 					</section>
