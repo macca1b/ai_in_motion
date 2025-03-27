@@ -2378,14 +2378,19 @@ button,
   height: 100%;
 }
 
+
 .hero-content {
   padding: 20px;
   max-width: 90%;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.85); /* ← This gives the overlay box its appearance */
   border-radius: 12px;
   text-align: center;
   max-height: 80%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* optional nice soft shadow */
 }
+
+
+
 
 .hero-number {
   font-size: 2rem;
