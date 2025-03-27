@@ -436,7 +436,7 @@
 
   function updateSlider(index) {
     const offset = index * -100;
-    slidesWrapper.style.transform = `translateX(${offset}%)`;
+      slidesWrapper.style.transform = `translateX(-${index * 100}%)`;
 
     dots.forEach(dot => dot.classList.remove('active'));
     dots[index].classList.add('active');
