@@ -2492,7 +2492,7 @@ h1 {
   gap: 20px;
   width: 30%; /* same as .hero-content width */
   right: 5%;   /* align with the right edge of hero-content */
-  top: calc(50% + 25%); /* 50% down + half of .hero-content height (75% total) */
+  top: calc(50% + 30%); /* 50% down + half of .hero-content height (75% total) */
   transform: translateY(0); /* remove the shifting */
   z-index: 3;
 }
