@@ -2345,3 +2345,125 @@ button,
 .video-thumb:hover {
   transform: scale(1.075);
 }
+
+
+/* === Homepage Hero Section === */
+.home-hero-section {
+  position: relative;
+  background-color: #f7f8fa;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home-hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 900px;
+  width: 100%;
+}
+
+.home-hero-text h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+  color: #1c1c1c;
+  line-height: 1.2;
+}
+
+.home-hero-number {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #cccccc;
+  margin-right: 10px;
+}
+
+.home-hero-dot {
+  color: #8cc63f; /* green accent */
+}
+
+.home-hero-subtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #666;
+}
+
+.home-hero-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #8cc63f;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.home-hero-link:hover {
+  text-decoration: underline;
+  color: #5a9c2f;
+}
+
+.home-hero-video {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.home-hero-video video {
+  width: 100%;
+  max-width: 640px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+/* Optional Arrows */
+.home-hero-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.home-hero-arrow:hover {
+  background: #eee;
+}
+
+.home-hero-arrow.left {
+  left: 20px;
+}
+
+.home-hero-arrow.right {
+  right: 20px;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .home-hero-text h1 {
+    font-size: 2.8rem;
+  }
+
+  .home-hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .home-hero-link {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
