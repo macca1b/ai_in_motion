@@ -2424,7 +2424,7 @@ button,
 /* === Overlay Content Box === */
 .hero-content {
   position: absolute;
-  top: 40%;
+  top: 30%;
   right: 5%;
   transform: translateY(-50%);
   width: 30%;
