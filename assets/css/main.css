@@ -2486,14 +2486,14 @@ h1 {
 
 .slider-controls {
   position: absolute;
-  top: 50%;
-  right: 5%;
-  transform: translateY(50%); /* moves it just under the overlay */
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
   width: 30%; /* same as .hero-content width */
+  right: 5%;   /* align with the right edge of hero-content */
+  top: calc(50% + 37.5%); /* 50% down + half of .hero-content height (75% total) */
+  transform: translateY(0); /* remove the shifting */
   z-index: 3;
 }
 
