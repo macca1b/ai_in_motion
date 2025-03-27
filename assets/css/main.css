@@ -2483,15 +2483,21 @@ h1 {
 }
 
 /* === Slider Controls === */
+
 .slider-controls {
   position: absolute;
+  top: 50%;
   right: 5%;
-  bottom: 5%;
+  transform: translateY(50%); /* moves it just under the overlay */
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 20px;
+  width: 30%; /* same as .hero-content width */
   z-index: 3;
 }
+
+
 
 .arrow {
   background: white;
