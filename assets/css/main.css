@@ -2377,7 +2377,7 @@ button,
 .hero-branding {
   position: absolute;
   top: 50%;
-  left: 5%;
+  left: 15%;
   transform: translateY(-50%);
   z-index: 2;
   color: white;
@@ -2387,7 +2387,7 @@ button,
 }
 
 .hero-branding h1 {
-  font-size: 8rem;
+  font-size: 10rem;
   margin: 0;
   font-weight: 700;
   line-height: 1.1;
@@ -2398,7 +2398,7 @@ button,
   margin-top: 10px;
   font-weight: 300;
   letter-spacing: 1px;
-  color: green;
+  font-color: green;
 }
 
 /* === Wrapper for All Slides === */
