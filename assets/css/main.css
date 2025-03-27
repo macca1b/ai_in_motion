@@ -2377,7 +2377,7 @@ button,
 .hero-branding {
   position: absolute;
   top: 50%;
-  left: 7%;
+  left: 15%;
   transform: translateY(-50%);
   z-index: 2;
   color: white;
