@@ -426,56 +426,62 @@
 
 	
 	<!-- Your content above -->
-
 <script>
+  const slidesWrapper = document.querySelector('.slides-wrapper');
   const slides = document.querySelectorAll('.slide');
   const dots = document.querySelectorAll('.dot');
   const leftArrow = document.querySelector('.arrow.left');
   const rightArrow = document.querySelector('.arrow.right');
-  let current = 0;
-  let interval;
 
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.classList.remove('active');
-      dots[i].classList.remove('active');
-      slide.style.left = (i - index) * 100 + '%';
-    });
-    slides[index].classList.add('active');
+  let currentSlide = 0;
+  let autoScrollInterval;
+
+  function updateSlider(index) {
+    const offset = index * -100;
+    slidesWrapper.style.transform = `translateX(${offset}%)`;
+
+    dots.forEach(dot => dot.classList.remove('active'));
     dots[index].classList.add('active');
-    current = index;
+
+    currentSlide = index;
   }
 
   function nextSlide() {
-    let next = (current + 1) % slides.length;
-    showSlide(next);
+    let next = (currentSlide + 1) % slides.length;
+    updateSlider(next);
   }
 
   function prevSlide() {
-    let prev = (current - 1 + slides.length) % slides.length;
-    showSlide(prev);
+    let prev = (currentSlide - 1 + slides.length) % slides.length;
+    updateSlider(prev);
   }
 
   leftArrow.addEventListener('click', () => {
     prevSlide();
-    resetInterval();
+    resetAutoScroll();
   });
 
   rightArrow.addEventListener('click', () => {
     nextSlide();
-    resetInterval();
+    resetAutoScroll();
   });
 
-  function resetInterval() {
-    clearInterval(interval);
-    interval = setInterval(nextSlide, 7000);
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      updateSlider(i);
+      resetAutoScroll();
+    });
+  });
+
+  function resetAutoScroll() {
+    clearInterval(autoScrollInterval);
+    autoScrollInterval = setInterval(nextSlide, 8000); // 8 seconds
   }
 
-  // Initialize
-  showSlide(0);
-  interval = setInterval(nextSlide, 7000);
+  // Initial setup
+  updateSlider(0);
+  autoScrollInterval = setInterval(nextSlide, 8000);
 </script>
-
 	
 	
 	
