@@ -2356,7 +2356,7 @@ button,
 .hero-slider {
   position: relative;         /* Needed to position .slide elements absolutely inside this container */
   width: 100%;                /* Full width of the screen */
-  height: 65vh;               /* 65% of the viewport height — controls the height of the entire hero section */
+  height: 60vh;               /* 65% of the viewport height — controls the height of the entire hero section */
   overflow: hidden;           /* Hides anything that goes outside this container (like off-screen slides) */
   font-family: 'Helvetica Neue', sans-serif;  /* Sets the font for everything inside */
 }
