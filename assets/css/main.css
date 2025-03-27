@@ -2425,7 +2425,7 @@ button,
 .hero-content {
   position: absolute;
   top: 45%; /* ✅ centers vertically */
-  right: 10%;
+  right: 15%;
   transform: translateY(-50%);
   width: 30%;
   height: 90%;
@@ -2493,7 +2493,7 @@ h1 {
   align-items: center;
   gap: 20px;
   width: 30%; /* same as .hero-content width */
-  right: 5%;   /* align with the right edge of hero-content */
+  right: 15%;   /* align with the right edge of hero-content */
   top: calc(50% + 35%); /* 50% down + half of .hero-content height (75% total) */
   transform: translateY(0); /* remove the shifting */
   z-index: 3;
