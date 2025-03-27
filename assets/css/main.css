@@ -2424,7 +2424,7 @@ button,
 /* === Overlay Content Box === */
 .hero-content {
   position: absolute;
-  top: 30%;
+  top: 50%; /* ✅ centers vertically */
   right: 5%;
   transform: translateY(-50%);
   width: 30%;
@@ -2435,11 +2435,12 @@ button,
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   text-align: left;
   z-index: 2;
-  justify-content: flex-start; /* ⬅️ moves content toward the top */
-  align-items: flex-start;
 }
+
 
 .hero-number {
   font-size: 2rem;
