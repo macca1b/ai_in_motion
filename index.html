@@ -422,5 +422,61 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/search.js"></script>
+
+	
+	<!-- Your content above -->
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
+  const leftArrow = document.querySelector('.arrow.left');
+  const rightArrow = document.querySelector('.arrow.right');
+  let current = 0;
+  let interval;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      dots[i].classList.remove('active');
+      slide.style.left = (i - index) * 100 + '%';
+    });
+    slides[index].classList.add('active');
+    dots[index].classList.add('active');
+    current = index;
+  }
+
+  function nextSlide() {
+    let next = (current + 1) % slides.length;
+    showSlide(next);
+  }
+
+  function prevSlide() {
+    let prev = (current - 1 + slides.length) % slides.length;
+    showSlide(prev);
+  }
+
+  leftArrow.addEventListener('click', () => {
+    prevSlide();
+    resetInterval();
+  });
+
+  rightArrow.addEventListener('click', () => {
+    nextSlide();
+    resetInterval();
+  });
+
+  function resetInterval() {
+    clearInterval(interval);
+    interval = setInterval(nextSlide, 7000);
+  }
+
+  // Initialize
+  showSlide(0);
+  interval = setInterval(nextSlide, 7000);
+</script>
+
+	
+	
+	
 	</body>
 </html>
