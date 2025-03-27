@@ -2350,7 +2350,6 @@ button,
 
 /* ----- */
 
-
 /* === Hero Slider with Static Background === */
 .hero-slider.static-bg {
   position: relative;
@@ -2363,7 +2362,45 @@ button,
   font-family: 'Helvetica Neue', sans-serif;
 }
 
-/* === Wrapper for All Slides (laid out in a row) === */
+/* === Branding on the Left === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50%) translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+  }
+}
+
+.hero-branding {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  opacity: 0;
+  animation: fadeIn 1.4s ease-out 0.5s forwards;
+}
+
+.hero-branding h1 {
+  font-size: 4rem;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.hero-branding p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* === Wrapper for All Slides === */
 .slides-wrapper {
   display: flex;
   width: 100%;
@@ -2375,7 +2412,7 @@ button,
 
 /* === Each Slide === */
 .slide {
-  flex: 0 0 100%;        /* Each slide takes up full width of section */
+  flex: 0 0 100%;
   height: 100%;
   position: relative;
   display: flex;
@@ -2383,7 +2420,7 @@ button,
   justify-content: flex-end;
 }
 
-/* === Overlay Content Box (on right side) === */
+/* === Overlay Content Box === */
 .hero-content {
   position: absolute;
   top: 50%;
@@ -2402,7 +2439,6 @@ button,
   z-index: 2;
 }
 
-/* === Text Styling Inside Overlay === */
 .hero-number {
   font-size: 2rem;
   color: #ccc;
@@ -2437,7 +2473,6 @@ h1 {
   text-decoration: underline;
 }
 
-/* === Optional Video Styling === */
 .hero-video video {
   width: 100%;
   max-width: 100%;
@@ -2446,7 +2481,7 @@ h1 {
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* === Slider Controls (Positioned Under Overlay Box) === */
+/* === Slider Controls === */
 .slider-controls {
   position: absolute;
   right: 5%;
@@ -2501,6 +2536,16 @@ h1 {
     margin-top: 10px;
     justify-content: center;
   }
-}
+
+  .hero-branding {
+    position: static;
+    transform: none;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.4);
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+} 
 
 
