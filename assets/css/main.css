@@ -2348,68 +2348,54 @@ button,
 
 
 
+/* ----- 
 
-
-
-
-/* === Hero Slider === */
-.hero-slider {
-  position: relative;         /* Needed to position .slide elements absolutely inside this container */
-  width: 100%;                /* Full width of the screen */
-  height: 60vh;               /* 65% of the viewport height — controls the height of the entire hero section */
-  overflow: hidden;           /* Hides anything that goes outside this container (like off-screen slides) */
-  font-family: 'Helvetica Neue', sans-serif;  /* Sets the font for everything inside */
+.hero-slider.static-bg {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+.slides-wrapper {
+  display: flex;
+  transition: transform 0.6s ease;
+  width: 100%;
+  height: 100%;
+}
 
-
-
-/* === Each Slide === */
 .slide {
-  position: absolute;         /* Takes the slide out of normal flow so they can stack and animate */
-  width: 100%;                /* Makes each slide take up full width */
-  height: 100%;               /* Makes slide match the height of the .hero-slider container */
-  top: 0;                     /* Positions the slide at the top of the container */
-  left: 100%;                 /* Pushes each slide off-screen to the right (initial state) */
-  background-size: cover;     /* Makes background image cover entire container */
-  background-position: center;/* Keeps background centered (horizontally & vertically) */
-  background-repeat: no-repeat;/* Prevents background image from repeating */
-  transition: left 0.6s ease; /* Smooth sliding animation when changing the left position */
-  display: flex;              /* Enables flexbox layout to center content inside the slide */
-  align-items: center;        /* Vertically centers content */
-  justify-content: center;    /* Horizontally centers content */
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-
-.slide.active {
-  left: 0;
-}
-
-/* === Overlayed Content === */
 .hero-content {
-  padding: 20px;              /* Adds inner spacing inside the content box */
-  max-width: 90%;             /* Keeps content from being too wide — especially on large screens */
-  background: rgba(255, 255, 255, 0.85); 
-                              /* Semi-transparent white background to sit on top of image (for readability) */
-  border-radius: 12px;        /* Rounded corners on the content box */
-  max-height: 60%;            /* Limits height so it doesn't overflow smaller screens */
-  overflow: auto;             /* Adds scrollbar if content ever overflows vertically */
+  padding: 20px;
+  max-width: 90%;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  text-align: center;
+  max-height: 80%;
 }
-
-
 
 .hero-number {
   font-size: 2rem;
   color: #ccc;
-  display: block;
-  font-weight: 400;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin: 0;
   color: #1c1c1c;
-  font-weight: 700;
 }
 
 .hero-dot {
@@ -2418,98 +2404,49 @@ h1 {
 
 .hero-subtitle {
   font-size: 1.2rem;
-  color: #555;
   margin: 10px 0 20px;
+  color: #555;
 }
 
 .hero-link {
   color: #8cc63f;
-  font-size: 1rem;
   text-decoration: none;
-  display: inline-block;
-  margin-bottom: 30px;
-}
-
-.hero-link:hover {
-  text-decoration: underline;
-}
-
-/* === Video Element === */
-.hero-video {
-  margin-top: 20px;
 }
 
 .hero-video video {
-  max-width: 480px;
+  max-width: 400px;
   width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 20px;
 }
 
-/* === Slider Controls === */
 .slider-controls {
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 20px;
-  pointer-events: none; /* allows video controls to stay clickable */
 }
 
 .arrow {
   background: white;
   border: 1px solid #ddd;
   border-radius: 50%;
-  padding: 10px 15px;
-  font-size: 18px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
   cursor: pointer;
-  pointer-events: all;
-  transition: background 0.2s ease;
 }
 
-.arrow:hover {
-  background: #eee;
-}
-
-.slider-dots {
-  display: flex;
-  gap: 10px;
-}
-
-.slider-dots .dot {
+.dot {
   width: 10px;
   height: 10px;
   background: #ccc;
   border-radius: 50%;
-  display: inline-block;
 }
 
-.slider-dots .dot.active {
+.dot.active {
   background: #333;
 }
-
-/* === Responsive Tweaks === */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2.6rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1rem;
-  }
-
-  .hero-content {
-    padding: 20px;
-  }
-
-  .hero-video video {
-    max-width: 100%;
-  }
-}
-
 
 
 
