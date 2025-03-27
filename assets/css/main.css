@@ -2424,8 +2424,8 @@ button,
 /* === Overlay Content Box === */
 .hero-content {
   position: absolute;
-  top: 40%; /* ✅ centers vertically */
-  right: 5%;
+  top: 45%; /* ✅ centers vertically */
+  right: 10%;
   transform: translateY(-50%);
   width: 30%;
   height: 90%;
@@ -2494,7 +2494,7 @@ h1 {
   gap: 20px;
   width: 30%; /* same as .hero-content width */
   right: 5%;   /* align with the right edge of hero-content */
-  top: calc(50% + 30%); /* 50% down + half of .hero-content height (75% total) */
+  top: calc(50% + 35%); /* 50% down + half of .hero-content height (75% total) */
   transform: translateY(0); /* remove the shifting */
   z-index: 3;
 }
