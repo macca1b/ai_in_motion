@@ -2424,11 +2424,11 @@ button,
 /* === Overlay Content Box === */
 .hero-content {
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: 5%;
   transform: translateY(-50%);
   width: 30%;
-  height: 75%;
+  height: 80%;
   background: rgba(255, 255, 255, 0.85);
   border-radius: 12px;
   padding: 30px;
