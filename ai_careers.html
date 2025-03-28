@@ -6,6 +6,54 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/custom.css" />
+
+
+<style>
+			#career-viewer {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: stretch;
+				min-height: 100vh;
+				padding: 3rem;
+				gap: 2rem;
+			}
+
+			.career-controls {
+				flex: 1 1 25%;
+				display: flex;
+				flex-direction: column;
+				gap: 1rem;
+				padding: 1rem;
+				background: #f5f5f5;
+				border-radius: 8px;
+			}
+
+			.career-visual {
+				flex: 1 1 70%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				background: #fff;
+				border-radius: 8px;
+				box-shadow: 0 0 12px rgba(0,0,0,0.05);
+				padding: 2rem;
+			}
+
+			.card {
+				background: #ffffff;
+				border: 1px solid #ddd;
+				border-radius: 12px;
+				padding: 1.5rem;
+				box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+				margin-bottom: 1rem;
+			}
+
+			.disruptor-score {
+				margin-top: 2rem;
+			}
+		</style>
+
+		
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -26,38 +74,44 @@
 						</ul>
 					</header>
 
-					<!-- Hero Section -->
+
+
+			<!-- Hero Section -->
 					<section id="career-viewer" class="fullscreen">
-						<div class="career-header">
-							<header class="major">
-								<h1>Career Viewer</h1>
-								<p>Discover how AI is transforming your role — search, explore, and visualise the impact.</p>
-							</header>
-							<div class="career-controls">
-								<select id="sector-select">
-									<option value="">Select a sector</option>
-									<option value="marketing">Marketing</option>
-									<option value="technology">Technology</option>
-									<option value="finance">Finance</option>
-								</select>
-								<select id="job-select">
-									<option value="">Select a job</option>
-									<option value="data-analyst">Data Analyst</option>
-									<option value="copywriter">Copywriter</option>
-									<option value="nurse">Nurse</option>
-								</select>
-								<input type="text" id="job-search" placeholder="Or search for a job..." />
-							</div>
+						<div class="career-controls">
+							<h3>Select a Role</h3>
+							<select id="sector-select">
+								<option value="">Sector</option>
+								<option value="marketing">Marketing</option>
+								<option value="technology">Technology</option>
+								<option value="finance">Finance</option>
+							</select>
+							<select id="job-select">
+								<option value="">Job Title</option>
+								<option value="data-analyst">Data Analyst</option>
+								<option value="copywriter">Copywriter</option>
+								<option value="nurse">Nurse</option>
+							</select>
+							<input type="text" id="job-search" placeholder="Search job..." />
 						</div>
+
 						<div class="career-visual">
-							<!-- Placeholder for dynamic visual content -->
-							<div class="disruptor-score">
-								<h3>Disruptor Score</h3>
-								<div id="score-slider"></div>
-								<p class="score-label">High Impact</p>
+							<div class="card">
+								<h2>Selected Role: Data Analyst</h2>
+								<p><strong>Disruptor Score:</strong> 7/10</p>
+								<ul>
+									<li><strong>SQL:</strong> Safe</li>
+									<li><strong>Excel:</strong> Augmented</li>
+									<li><strong>Data Viz:</strong> Augmented</li>
+									<li><strong>Reporting:</strong> At Risk</li>
+									<li><strong>Predictive Modelling:</strong> Augmented</li>
+								</ul>
+								<p><strong>Advice:</strong> Focus on storytelling, AI tooling, and real-time data apps.</p>
 							</div>
 						</div>
 					</section>
+
+					
 
 					<!-- The Problem -->
 					<section id="problem" class="wrapper style1">
