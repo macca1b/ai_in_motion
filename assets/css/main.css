@@ -2562,8 +2562,11 @@ h1 {
 
 
 
-/* Fullscreen hero section */
-section.fullscreen {
+
+/* Fullscreen Hero Section */
+
+
+.fullscreen {
   height: 80vh;
   display: flex;
   align-items: center;
@@ -2571,21 +2574,23 @@ section.fullscreen {
   padding: 3rem 2rem;
 }
 
-/* Layout container */
+/* Layout Container */
 .career-section {
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 100%;
   gap: 2rem;
 }
 
-/* Left side (selector + search) */
+/* Left Panel: Job Selection */
 .career-left {
-  flex: 1;
-  max-width: 30%;
+  width: 30%;
+  padding: 2rem;
+  overflow-y: auto;
 }
 
-.career-left .career-controls {
+.career-controls {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -2601,27 +2606,34 @@ section.fullscreen {
   width: 100%;
 }
 
-/* Right side (visual card) */
+/* Right Panel: Career Card */
 .career-right {
-  flex: 2;
+  width: 70%;
+  padding: 2rem;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .career-card {
-  background: #fff;
-  border-radius: 10px;
+  width: 100%;
+  max-height: 100%;
+  overflow-y: auto;
   padding: 2rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-
-.career-card h3,
-.career-card h4 {
-  margin-bottom: 0.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .career-card > div {
   margin-bottom: 1.5rem;
 }
 
-
+.career-card h3,
+.career-card h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
 
 
