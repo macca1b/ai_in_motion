@@ -2558,3 +2558,22 @@ h1 {
 } 
 
 
+
+.fullscreen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.career-header {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.career-visual {
+  flex: 1;
+}
+
