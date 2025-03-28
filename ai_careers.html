@@ -60,18 +60,17 @@ function updateDisruptorGauge(score) {
         borderWidth: 0
       }]
     },
-    options: {
-      cutout: '80%',
-      plugins: {
-        legend: { display: false },
-        tooltip: { enabled: false },
-        // 👇 Custom plugin to draw text in the center
-        centerText: {
-          display: true,
-          text: `${score}`
-        }
-      }
-    },
+   options: {
+  cutout: '80%', // <-- Move this inside the main `options` block, not inside `plugins`
+  plugins: {
+    legend: { display: false },
+    tooltip: { enabled: false },
+    centerText: {
+      display: true,
+      text: `${score}`
+    }
+  }
+},
     plugins: [{
       id: 'centerText',
       beforeDraw(chart) {
