@@ -32,16 +32,18 @@
 					}
 				};
 
-				document.getElementById("job-select").addEventListener("change", function () {
-					const jobKey = this.value;
-					if (careers[jobKey]) {
-						const data = careers[jobKey];
-						document.querySelector(".score-label").textContent = `Score: ${data.score}/100`;
-						document.querySelector(".persona-summary p").textContent = data.summary;
-						document.querySelector(".next-steps p").textContent = data.nextSteps;
-						updateAIMeter(data.automation, data.augmentation);
-						updateDisruptorGauge(data.score);
-					}
+document.getElementById("job-select").addEventListener("change", function () {
+  const jobKey = this.value;
+  if (careers[jobKey]) {
+    const data = careers[jobKey];
+    document.querySelector(".score-label").textContent = `Score: ${data.score}/100`;
+    document.querySelector(".persona-summary p").textContent = data.summary;
+    document.querySelector(".next-steps p").textContent = data.nextSteps;
+    updateAIMeter(data.automation, data.augmentation);
+    updateDisruptorGauge(data.score); // <-- This line
+  }
+
+					
 				});
 
 			function updateDisruptorGauge(score) {
