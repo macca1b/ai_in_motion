@@ -5,9 +5,70 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/custom.css" />
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const careers = {
+					"data-analyst": {
+						score: 78,
+						automation: 60,
+						augmentation: 40,
+						summary: "Data Analysts are increasingly supported by AI to automate report generation and find insights faster.",
+						nextSteps: "Learn Python, brush up on data storytelling, and explore LLM tools like ChatGPT."
+					},
+					"copywriter": {
+						score: 85,
+						automation: 75,
+						augmentation: 25,
+						summary: "Copywriters are seeing AI assist with first drafts, content generation and tone matching.",
+						nextSteps: "Focus on strategy, brand voice, and storytelling."
+					},
+					"nurse": {
+						score: 45,
+						automation: 20,
+						augmentation: 80,
+						summary: "Nursing remains deeply human, with AI aiding diagnostics and patient monitoring.",
+						nextSteps: "Explore digital health tools and patient data systems."
+					}
+				};
 
-	
+				document.getElementById("job-select").addEventListener("change", function () {
+					const jobKey = this.value;
+					if (careers[jobKey]) {
+						const data = careers[jobKey];
+						document.querySelector(".score-label").textContent = `Score: ${data.score}/100`;
+						document.querySelector(".persona-summary p").textContent = data.summary;
+						document.querySelector(".next-steps p").textContent = data.nextSteps;
+						updateAIMeter(data.automation, data.augmentation);
+					}
+				});
+
+				function updateAIMeter(automation, augmentation) {
+					const ctx = document.getElementById('aiChart').getContext('2d');
+					if (window.aiBarChart) window.aiBarChart.destroy();
+					window.aiBarChart = new Chart(ctx, {
+						type: 'bar',
+						data: {
+							labels: ['Automation', 'Augmentation'],
+							datasets: [{
+								label: 'AI Impact',
+								data: [automation, augmentation],
+								backgroundColor: ['#ff4c4c', '#4caf50']
+							}]
+						},
+						options: {
+							responsive: true,
+							scales: {
+								y: {
+									beginAtZero: true,
+									max: 100
+								}
+							}
+						}
+					});
+				}
+			});
+		</script>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -28,9 +89,7 @@
 						</ul>
 					</header>
 
-
-
-			<!-- Hero Section -->
+					<!-- Hero Section -->
 					<section id="career-viewer" class="fullscreen">
 						<div class="career-section">
 							<div class="career-left">
@@ -63,15 +122,13 @@
 									</div>
 									<div class="skill-chart">
 										<h4>Skill Evolution</h4>
-										<!-- Placeholder chart -->
 									</div>
 									<div class="ai-meter">
 										<h4>AI Automation vs Augmentation</h4>
-										<!-- Visual scale here -->
+										<canvas id="aiChart"></canvas>
 									</div>
 									<div class="timeline">
 										<h4>Timeline of Change</h4>
-										<!-- Horizontal visual timeline -->
 									</div>
 									<div class="persona-summary">
 										<h4>Job Summary</h4>
@@ -86,8 +143,6 @@
 						</div>
 					</section>
 
-					
-
 					<!-- The Problem -->
 					<section id="problem" class="wrapper style1">
 						<div class="inner">
@@ -97,63 +152,6 @@
 							<p>Everyone’s talking about how AI will change jobs. But what does that actually look like for a specific role — a data analyst, a nurse, a teacher, a copywriter? This tool tries to answer that.</p>
 						</div>
 					</section>
-
-					<!-- How It Works -->
-					<section id="how-it-works" class="wrapper style2">
-						<div class="inner">
-							<header class="major">
-								<h2>How It Works</h2>
-							</header>
-							<p>We take real job listings, break them down into core skills, then map how those skills might evolve, stay relevant, or become obsolete as AI progresses. This isn’t just about automation — it’s about augmentation, new opportunities, and where to focus your learning next.</p>
-						</div>
-					</section>
-
-					<!-- Who It's For -->
-					<section id="audience" class="wrapper style3">
-						<div class="inner">
-							<header class="major">
-								<h2>Who It's For</h2>
-							</header>
-							<p>If you’re working, hiring, learning, or teaching — this project is for you. It’s built to help professionals reskill, students figure out what to study, and organisations rethink talent in an age of constant disruption.</p>
-						</div>
-					</section>
-
-					<!-- The Big Picture -->
-					<section id="big-picture" class="wrapper style1">
-						<div class="inner">
-							<header class="major">
-								<h2>The Big Picture</h2>
-							</header>
-							<p>Most of the AI conversation is too zoomed out — all stats, no texture. This tool zooms in. Role by role, skill by skill. And from those details, bigger patterns begin to emerge. It’s not a crystal ball. But it is a way to ask better questions about the future of work.</p>
-						</div>
-					</section>
-
-					<!-- About Me -->
-					<section id="about" class="wrapper style2">
-						<div class="inner">
-							<header class="major">
-								<h2>About Me</h2>
-							</header>
-							<p>I'm a data analyst by trade, a writer by instinct, and someone who's always been drawn to the edges — where technology, creativity, and culture blur into each other.</p>
-							<p>I’ve spent years building systems, leading teams, and asking tough questions about how we use data. Lately, I’ve been rethinking all of it through the lens of AI — not just what these tools can do, but what they mean for how we work, learn, and live.</p>
-							<p>This site is my attempt to capture that exploration. Not polished answers — just honest thinking, in progress.</p>
-						</div>
-					</section>
-
-					<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2>Let’s Connect</h2>
-								<p>Got a question, idea, or collaboration in mind? <a href="#">Get in touch</a> or find me on <a href="#">LinkedIn</a> / <a href="#">Instagram</a>.</p>
-							</section>
-							<section>
-								<h2>Colophon</h2>
-								<p>Built with HTML5 UP’s <a href="https://html5up.net/editorial">Editorial</a> template, tweaked with a lot of coffee and curiosity. Some of the content is AI-assisted, all of it is human-approved.</p>
-							</section>
-						</div>
-					</footer>
-
 				</div>
 			</div>
 
