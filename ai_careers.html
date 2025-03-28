@@ -1,220 +1,179 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <title>AI Futures</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css?v=2" />
-  </head>
-  <body class="is-preload">
+	<head>
+		<title>Career Viewer | AI Futures</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
 
-    <!-- Wrapper -->
-    <div id="wrapper">
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner">
+					<!-- Search -->
+					<section id="search" class="alt">
+						<form id="search-form">
+							<input type="text" name="query" id="query" placeholder="Search" />
+						</form>
+					</section>
 
-      <!-- Main -->
-      <div id="main">
-        <div class="inner">
+					<!-- Menu -->
+					<nav id="menu">
+						<header class="major">
+							<h2>Menu</h2>
+						</header>
+						<ul>
+							<li><a href="index.html">Homepage</a></li>
+							<li><a href="#library">AI - Thought Library</a></li>
+							<li>
+								<span class="opener">AI - Tool Up</span>
+								<ul>
+									<li><a href="writing.html">Writing</a></li>
+									<li><a href="#">Audio</a></li>
+									<li><a href="#">Image</a></li>
+									<li><a href="#">Video</a></li>
+								</ul>
+							</li>
+							<li><a href="#">AI - Predictions</a></li>
+							<li>
+								<span class="opener">AI - By Sector</span>
+								<ul>
+									<li><a href="temp.html">Marketing</a></li>
+									<li><a href="#">Technology</a></li>
+									<li><a href="#">Finance</a></li>
+									<li><a href="#">Defence</a></li>
+									<li><a href="#">Industrial</a></li>
+									<li><a href="#">Healthcare</a></li>
+									<li><a href="#">Materials</a></li>
+									<li><a href="#">Energy</a></li>
+								</ul>
+							</li>
+							<li><a href="#">AI - Use Cases</a></li>
+							<li><a href="c1_cdp.html">AI - CDPs</a></li>
+							<li><a href="es_index.html">AI - Ethics & Society</a></li>
+							<li><a href="d1_defined.html">AI - Defined</a></li>
+							<li><a href="ai_careers.html">AI - Careers</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
 
-          <!-- Header -->
-          <header id="header">
-            <h3><a href="index.html" class="logo"><strong>AI Futures</strong> by Brendan MacCabe</a></h3>
-            <ul class="icons">
-              <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-              <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-              <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-              <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
-            </ul>
-          </header>
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
 
-          <!-- Sections -->
+					<!-- Hero Section -->
+					<section id="career-viewer" class="fullscreen">
+						<div class="career-header">
+							<header class="major">
+								<h1>Career Viewer</h1>
+								<p>Discover how AI is transforming your role — search, explore, and visualise the impact.</p>
+							</header>
+							<div class="career-controls">
+								<select id="sector-select">
+									<option value="">Select a sector</option>
+									<option value="marketing">Marketing</option>
+									<option value="technology">Technology</option>
+									<option value="finance">Finance</option>
+								</select>
+								<select id="job-select">
+									<option value="">Select a job</option>
+									<option value="data-analyst">Data Analyst</option>
+									<option value="copywriter">Copywriter</option>
+									<option value="nurse">Nurse</option>
+								</select>
+								<input type="text" id="job-search" placeholder="Or search for a job..." />
+							</div>
+						</div>
+						<div class="career-visual">
+							<div class="disruptor-score">
+								<h3>Disruptor Score</h3>
+								<div id="score-slider"></div>
+								<p class="score-label">High Impact</p>
+							</div>
+						</div>
+					</section>
 
-  <!-- Career Viewer Section -->
-        <section id="career-viewer" class="wrapper style1 fullscreen">
-          <div class="inner">
-            <header class="major">
-              <h2>Explore AI’s Impact on Careers</h2>
-            </header>
-            <div class="content">
-              <label for="role-select">Choose a Role:</label>
-              <select id="role-select">
-                <option selected disabled>Select a role</option>
-                <option>Data Visualisation Analyst</option>
-                <option>Copywriter</option>
-                <option>Healthcare Assistant</option>
-              </select>
+					<!-- Problem Statement -->
+					<section id="problem" class="wrapper style1">
+						<div class="inner">
+							<header class="major">
+								<h2>The Problem</h2>
+							</header>
+							<p>Everyone’s talking about how AI will change jobs. But what does that actually look like for a specific role — a data analyst, a nurse, a teacher, a copywriter? This tool tries to answer that.</p>
+						</div>
+					</section>
 
-              <div class="features-grid">
-                <div class="box">
-                  <h3>Current Skills</h3>
-                  <ul>
-                    <li>SQL</li>
-                    <li>Tableau</li>
-                    <li>Storytelling</li>
-                  </ul>
-                </div>
-                <div class="box">
-                  <h3>AI Impact</h3>
-                  <strong>Obsolete:</strong>
-                  <ul><li>Manual Data Cleaning</li></ul>
-                  <strong>Evolving:</strong>
-                  <ul><li>Data Storytelling with AI</li></ul>
-                  <strong>New:</strong>
-                  <ul><li>Prompt Engineering</li></ul>
-                </div>
-                <div class="box">
-                  <h3>Learning Suggestions</h3>
-                  <ul>
-                    <li>Learn GPT prompt design</li>
-                    <li>Explore AutoML platforms</li>
-                    <li>Try generative dashboards</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+					<!-- How It Works -->
+					<section id="how-it-works" class="wrapper style2">
+						<div class="inner">
+							<header class="major">
+								<h2>How It Works</h2>
+							</header>
+							<p>We take real job listings, break them down into core skills, then map how those skills might evolve, stay relevant, or become obsolete as AI progresses. This isn’t just about automation — it’s about augmentation, new opportunities, and where to focus your learning next.</p>
+						</div>
+					</section>
 
+					<!-- Who It's For -->
+					<section id="audience" class="wrapper style3">
+						<div class="inner">
+							<header class="major">
+								<h2>Who It's For</h2>
+							</header>
+							<p>If you’re working, hiring, learning, or teaching — this project is for you. It’s built to help professionals reskill, students figure out what to study, and organisations rethink talent in an age of constant disruption.</p>
+						</div>
+					</section>
 
-          
-          <section id="problem" class="wrapper style1">
-            <div class="inner">
-              <header class="major"><h2>The Problem</h2></header>
-              <p>Everyone’s talking about how AI will change jobs. But what does that actually look like for a specific role — a data analyst, a nurse, a teacher, a copywriter?</p>
-            </div>
-          </section>
+					<!-- The Big Picture -->
+					<section id="big-picture" class="wrapper style1">
+						<div class="inner">
+							<header class="major">
+								<h2>The Big Picture</h2>
+							</header>
+							<p>Most of the AI conversation is too zoomed out — all stats, no texture. This tool zooms in. Role by role, skill by skill. And from those details, bigger patterns begin to emerge. It’s not a crystal ball. But it is a way to ask better questions about the future of work.</p>
+						</div>
+					</section>
 
-          <section id="how-it-works" class="wrapper style2">
-            <div class="inner">
-              <header class="major"><h2>How It Works</h2></header>
-              <p>We take real job listings, break them down into core skills, then map how those skills might evolve as AI progresses.</p>
-            </div>
-          </section>
+					<!-- About Me -->
+					<section id="about" class="wrapper style2">
+						<div class="inner">
+							<header class="major">
+								<h2>About Me</h2>
+							</header>
+							<p>I'm a data analyst by trade, a writer by instinct, and someone who's always been drawn to the edges — where technology, creativity, and culture blur into each other.</p>
+							<p>I’ve spent years building systems, leading teams, and asking tough questions about how we use data. Lately, I’ve been rethinking all of it through the lens of AI — not just what these tools can do, but what they mean for how we work, learn, and live.</p>
+							<p>This site is my attempt to capture that exploration. Not polished answers — just honest thinking, in progress.</p>
+						</div>
+					</section>
 
-          <section id="audience" class="wrapper style3">
-            <div class="inner">
-              <header class="major"><h2>Who It’s For</h2></header>
-              <p>Whether you're learning, hiring, or reskilling — this project is for you.</p>
-            </div>
-          </section>
+					<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Let’s Connect</h2>
+								<p>Got a question, idea, or collaboration in mind? <a href="#">Get in touch</a> or find me on <a href="#">LinkedIn</a> / <a href="#">Instagram</a>.</p>
+							</section>
+							<section>
+								<h2>Colophon</h2>
+								<p>Built with HTML5 UP’s <a href="https://html5up.net/editorial">Editorial</a> template, tweaked with a lot of coffee and curiosity. Some of the content is AI-assisted, all of it is human-approved.</p>
+							</section>
+						</div>
+					</footer>
 
-          <section id="big-picture" class="wrapper style1">
-            <div class="inner">
-              <header class="major"><h2>The Big Picture</h2></header>
-              <p>Zooming in on job roles reveals patterns that help us understand the real impact of AI on the future of work.</p>
-            </div>
-          </section>
+				</div>
+			</div>
 
-          <section id="about" class="wrapper style2">
-            <div class="inner">
-              <header class="major"><h2>About Me</h2></header>
-              <p>I'm a data analyst by trade, a writer by instinct, and someone exploring the impact of AI on work and life.</p>
-            </div>
-          </section>
+		</div>
 
-          <footer id="footer">
-            <div class="inner">
-              <section>
-                <h2>Let’s Connect</h2>
-                <p><a href="#">Get in touch</a> or find me on <a href="#">LinkedIn</a> / <a href="#">Instagram</a>.</p>
-              </section>
-              <section>
-                <h2>Colophon</h2>
-                <p>Built with HTML5 UP’s <a href="https://html5up.net/editorial">Editorial</a> template. Some content is AI-assisted, all of it is human-approved.</p>
-              </section>
-            </div>
-          </footer>
-        </div>
-      </div>
-
-      <!-- Sidebar (moved below #main to appear on the left visually) -->
-      <div id="sidebar">
-        <div class="inner">
-          <section id="search" class="alt">
-            <form id="search-form">
-              <input type="text" name="query" id="query" placeholder="Search" />
-            </form>
-            <div id="search-results"></div>
-          </section>
-
-          <nav id="menu">
-            <header class="major"><h2>Menu</h2></header>
-            <ul>
-              <li><a href="index.html">Homepage</a></li>
-              <li><a href="#library">AI - Thought Library</a></li>
-              <li>
-                <span class="opener">AI - Tool Up</span>
-                <ul>
-                  <li><a href="writing.html">Writing</a></li>
-                  <li><a href="#">Audio</a></li>
-                  <li><a href="#">Image</a></li>
-                  <li><a href="#">Video</a></li>
-                </ul>
-              </li>
-              <li><a href="#">AI - Predictions</a></li>
-              <li>
-                <span class="opener">AI - By Sector</span>
-                <ul>
-                  <li><a href="temp.html">Marketing</a></li>
-                  <li><a href="#">Technology</a></li>
-                  <li><a href="#">Finance</a></li>
-                  <li><a href="#">Defence</a></li>
-                  <li><a href="#">Industrial</a></li>
-                  <li><a href="#">Healthcare</a></li>
-                  <li><a href="#">Materials</a></li>
-                  <li><a href="#">Energy</a></li>
-                </ul>
-              </li>
-              <li><a href="#">AI - Use Cases</a></li>
-              <li><a href="c1_cdp.html">AI - CDPs</a></li>
-              <li><a href="es_index.html">AI - Ethics & Society</a></li>
-              <li><a href="d1_defined.html">AI - Defined</a></li>
-              <li><a href="ai_careers.html">AI - Careers</a></li>
-            </ul>
-          </nav>
-
-          <!-- Newsletter -->
-          <div id="mc_embed_shell">
-            <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-            <div id="mc_embed_signup">
-              <form action="https://gmail.us17.list-manage.com/subscribe/post?u=ceb32b70152099b8b9daf8ac5&amp;id=c55a1b143c&amp;f_id=009e6ce0f0"
-                method="post" class="validate" target="_blank">
-                <div id="mc_embed_signup_scroll">
-                  <header class="major"><h2>Newsletter</h2></header>
-                  <div class="mc-field-group">
-                    <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
-                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required />
-                  </div>
-                  <div class="clear foot">
-                    <input type="submit" name="subscribe" class="button" value="Subscribe" />
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-
-          <!-- Contact -->
-          <section>
-            <header class="major"><h2>Get in touch</h2></header>
-            <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus.</p>
-            <ul class="contact">
-              <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-              <li class="icon solid fa-phone">(000) 000-0000</li>
-              <li class="icon solid fa-home">1234 Somewhere Road #8254<br />Nashville, TN 00000-0000</li>
-            </ul>
-          </section>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/search.js"></script>
-
-  </body>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
 </html>
