@@ -1,248 +1,256 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Career Viewer | AI Futures</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-		<script>
-			document.addEventListener("DOMContentLoaded", function () {
-				const careers = {
-					"data-analyst": {
-						score: 78,
-						automation: 60,
-						augmentation: 40,
-						summary: "Data Analysts are increasingly supported by AI to automate report generation and find insights faster.",
-						nextSteps: "Learn Python, brush up on data storytelling, and explore LLM tools like ChatGPT."
-					},
-					"copywriter": {
-						score: 85,
-						automation: 75,
-						augmentation: 25,
-						summary: "Copywriters are seeing AI assist with first drafts, content generation and tone matching.",
-						nextSteps: "Focus on strategy, brand voice, and storytelling."
-					},
-					"nurse": {
-						score: 45,
-						automation: 20,
-						augmentation: 80,
-						summary: "Nursing remains deeply human, with AI aiding diagnostics and patient monitoring.",
-						nextSteps: "Explore digital health tools and patient data systems."
-					}
-				};
+<head>
+	<title>Career Viewer | AI Futures</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const careers = {
+				"data-analyst": {
+					score: 78,
+					automation: 60,
+					augmentation: 40,
+					summary: "Data Analysts are increasingly supported by AI to automate report generation and find insights faster.",
+					nextSteps: "Learn Python, brush up on data storytelling, and explore LLM tools like ChatGPT."
+				},
+				"copywriter": {
+					score: 85,
+					automation: 75,
+					augmentation: 25,
+					summary: "Copywriters are seeing AI assist with first drafts, content generation and tone matching.",
+					nextSteps: "Focus on strategy, brand voice, and storytelling."
+				},
+				"nurse": {
+					score: 45,
+					automation: 20,
+					augmentation: 80,
+					summary: "Nursing remains deeply human, with AI aiding diagnostics and patient monitoring.",
+					nextSteps: "Explore digital health tools and patient data systems."
+				}
+			};
 
-document.getElementById("job-select").addEventListener("change", function () {
-  const jobKey = this.value;
-  if (careers[jobKey]) {
-    const data = careers[jobKey];
-    document.querySelector(".score-label").textContent = `Score: ${data.score}/100`;
-    document.querySelector(".persona-summary p").textContent = data.summary;
-    document.querySelector(".next-steps p").textContent = data.nextSteps;
-    updateAIMeter(data.automation, data.augmentation);
-    updateDisruptorGauge(data.score); // <-- This line
-  }
-
-					
-				});
-
-function updateDisruptorGauge(score) {
-  const ctx = document.getElementById('disruptorGauge').getContext('2d');
-  if (window.disruptorChart) window.disruptorChart.destroy();
-
-  window.disruptorChart = new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-      labels: ['Score', 'Remaining'],
-      datasets: [{
-        data: [score, 100 - score],
-        backgroundColor: ['#ff4c4c', '#e0e0e0'],
-        borderWidth: 0
-      }]
-    },
-   options: {
-  cutout: '80%', // <-- Move this inside the main `options` block, not inside `plugins`
-  plugins: {
-    legend: { display: false },
-    tooltip: { enabled: false },
-    centerText: {
-      display: true,
-      text: `${score}`
-    }
-  }
-},
-    plugins: [{
-      id: 'centerText',
-      beforeDraw(chart) {
-        const { width } = chart;
-        const { height } = chart;
-        const ctx = chart.ctx;
-        ctx.restore();
-        const fontSize = (height / 150).toFixed(2);
-        ctx.font = `${fontSize}em Rubik, sans-serif`;
-        ctx.textBaseline = "middle";
-        ctx.fillStyle = "#333";
-        const text = `${score}`;
-        const textX = Math.round((width - ctx.measureText(text).width) / 2);
-        const textY = height / 2;
-        ctx.fillText(text, textX, textY);
-        ctx.save();
-      }
-    }]
-  });
-}
-
-				
-}
-
+			document.getElementById("job-select").addEventListener("change", function () {
+				const jobKey = this.value;
+				if (careers[jobKey]) {
+					const data = careers[jobKey];
+					document.querySelector(".score-label").textContent = `Score: ${data.score}/100`;
+					document.querySelector(".persona-summary p").textContent = data.summary;
+					document.querySelector(".next-steps p").textContent = data.nextSteps;
+					updateAIMeter(data.automation, data.augmentation);
+					updateDisruptorGauge(data.score);
+				}
 			});
-		</script>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-		<div id="wrapper" class="sidebar-left">
 
-			<!-- Main -->
-			<div id="main">
-				<div class="inner">
-					<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo"><strong>Editorial</strong> by Brendan MacCabe</a>
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
-						</ul>
-					</header>
+			function updateAIMeter(automation, augmentation) {
+				const ctx = document.getElementById('aiChart').getContext('2d');
+				if (window.aiBarChart) window.aiBarChart.destroy();
+				window.aiBarChart = new Chart(ctx, {
+					type: 'bar',
+					data: {
+						labels: ['Automation', 'Augmentation'],
+						datasets: [{
+							label: 'AI Impact',
+							data: [automation, augmentation],
+							backgroundColor: ['#ff4c4c', '#4caf50']
+						}]
+					},
+					options: {
+						responsive: true,
+						scales: {
+							y: {
+								beginAtZero: true,
+								max: 100
+							}
+						}
+					}
+				});
+			}
 
-					<!-- Hero Section -->
-					<section id="career-viewer" class="fullscreen">
-						<div class="career-section">
-							<div class="career-left">
-								<header class="major">
-									<h1>Career Viewer</h1>
-									<p>Discover how AI is transforming your role — search, explore, and visualise the impact.</p>
-								</header>
-								<div class="career-controls">
-									<select id="sector-select">
-										<option value="">Select a sector</option>
-										<option value="marketing">Marketing</option>
-										<option value="technology">Technology</option>
-										<option value="finance">Finance</option>
-									</select>
-									<select id="job-select">
-										<option value="">Select a job</option>
-										<option value="data-analyst">Data Analyst</option>
-										<option value="copywriter">Copywriter</option>
-										<option value="nurse">Nurse</option>
-									</select>
-									<input type="text" id="job-search" placeholder="Or search for a job..." />
-								</div>
-							</div>
-							<div class="career-right">
-								<div class="career-card">
-									<div class="disruptor-score">
-  <h3>Disruptor Score</h3>
-  <canvas id="disruptorGauge" width="150" height="150"></canvas>
-</div>
+			function updateDisruptorGauge(score) {
+				const ctx = document.getElementById('disruptorGauge').getContext('2d');
+				if (window.disruptorChart) window.disruptorChart.destroy();
+				window.disruptorChart = new Chart(ctx, {
+					type: 'doughnut',
+					data: {
+						labels: ['Score', 'Remaining'],
+						datasets: [{
+							data: [score, 100 - score],
+							backgroundColor: ['#ff4c4c', '#e0e0e0'],
+							borderWidth: 0,
+							cutout: '80%'
+						}]
+					},
+					options: {
+						plugins: {
+							legend: { display: false },
+							tooltip: { enabled: false }
+						}
+					},
+					plugins: [{
+						id: 'centerText',
+						beforeDraw(chart) {
+							const { width, height, ctx } = chart;
+							ctx.save();
+							const fontSize = (height / 100).toFixed(2);
+							ctx.font = `${fontSize}em Rubik, sans-serif`;
+							ctx.fillStyle = '#333';
+							ctx.textBaseline = 'middle';
+							const text = `${score}`;
+							const textX = (width - ctx.measureText(text).width) / 2;
+							const textY = height / 2;
+							ctx.fillText(text, textX, textY);
+							ctx.restore();
+						}
+					}]
+				});
+			}
+		});
+	</script>
+</head>
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper" class="sidebar-left">
 
-									<div class="skill-chart">
-										<h4>Skill Evolution</h4>
-									</div>
-									<div class="ai-meter">
-										<h4>AI Automation vs Augmentation</h4>
-										<canvas id="aiChart"></canvas>
-									</div>
-									<div class="timeline">
-										<h4>Timeline of Change</h4>
-									</div>
-									<div class="persona-summary">
-										<h4>Job Summary</h4>
-										<p>Name, sector, and brief description of how AI is affecting the role.</p>
-									</div>
-									<div class="next-steps">
-										<h4>Next Steps</h4>
-										<p>Suggestions for reskilling or courses to explore.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<!-- Header -->
+				<header id="header">
+					<a href="index.html" class="logo"><strong>Editorial</strong> by Brendan MacCabe</a>
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+					</ul>
+				</header>
 
-					<!-- The Problem -->
-					<section id="problem" class="wrapper style1">
-						<div class="inner">
+				<!-- Hero Section -->
+				<section id="career-viewer" class="fullscreen">
+					<div class="career-section">
+						<div class="career-left">
 							<header class="major">
-								<h2>The Problem</h2>
+								<h1>Career Viewer</h1>
+								<p>Discover how AI is transforming your role — search, explore, and visualise the impact.</p>
 							</header>
-							<p>Everyone’s talking about how AI will change jobs. But what does that actually look like for a specific role — a data analyst, a nurse, a teacher, a copywriter? This tool tries to answer that.</p>
+							<div class="career-controls">
+								<select id="sector-select">
+									<option value="">Select a sector</option>
+									<option value="marketing">Marketing</option>
+									<option value="technology">Technology</option>
+									<option value="finance">Finance</option>
+								</select>
+								<select id="job-select">
+									<option value="">Select a job</option>
+									<option value="data-analyst">Data Analyst</option>
+									<option value="copywriter">Copywriter</option>
+									<option value="nurse">Nurse</option>
+								</select>
+								<input type="text" id="job-search" placeholder="Or search for a job..." />
+							</div>
 						</div>
-					</section>
-				</div>
-			</div>
+						<div class="career-right">
+							<div class="career-card">
+								<div class="disruptor-score">
+									<h3>Disruptor Score</h3>
+									<canvas id="disruptorGauge" width="150" height="150"></canvas>
+									<p class="score-label">Score: --</p>
+								</div>
+								<div class="skill-chart">
+									<h4>Skill Evolution</h4>
+								</div>
+								<div class="ai-meter">
+									<h4>AI Automation vs Augmentation</h4>
+									<canvas id="aiChart"></canvas>
+								</div>
+								<div class="timeline">
+									<h4>Timeline of Change</h4>
+								</div>
+								<div class="persona-summary">
+									<h4>Job Summary</h4>
+									<p>Name, sector, and brief description of how AI is affecting the role.</p>
+								</div>
+								<div class="next-steps">
+									<h4>Next Steps</h4>
+									<p>Suggestions for reskilling or courses to explore.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 
-			<!-- Sidebar -->
-			<div id="sidebar">
-				<div class="inner">
-
-					<!-- Search -->
-					<section id="search" class="alt">
-						<form id="search-form">
-							<input type="text" name="query" id="query" placeholder="Search" />
-						</form>
-					</section>
-
-					<!-- Menu -->
-					<nav id="menu">
+				<!-- The Problem -->
+				<section id="problem" class="wrapper style1">
+					<div class="inner">
 						<header class="major">
-							<h2>Menu</h2>
+							<h2>The Problem</h2>
 						</header>
-						<ul>
-							<li><a href="index.html">Homepage</a></li>
-							<li><a href="#library">AI - Thought Library</a></li>
-							<li>
-								<span class="opener">AI - Tool Up</span>
-								<ul>
-									<li><a href="writing.html">Writing</a></li>
-									<li><a href="#">Audio</a></li>
-									<li><a href="#">Image</a></li>
-									<li><a href="#">Video</a></li>
-								</ul>
-							</li>
-							<li><a href="#">AI - Predictions</a></li>
-							<li>
-								<span class="opener">AI - By Sector</span>
-								<ul>
-									<li><a href="temp.html">Marketing</a></li>
-									<li><a href="#">Technology</a></li>
-									<li><a href="#">Finance</a></li>
-									<li><a href="#">Defence</a></li>
-									<li><a href="#">Industrial</a></li>
-									<li><a href="#">Healthcare</a></li>
-									<li><a href="#">Materials</a></li>
-									<li><a href="#">Energy</a></li>
-								</ul>
-							</li>
-							<li><a href="#">AI - Use Cases</a></li>
-							<li><a href="c1_cdp.html">AI - CDPs</a></li>
-							<li><a href="es_index.html">AI - Ethics & Society</a></li>
-							<li><a href="d1_defined.html">AI - Defined</a></li>
-							<li><a href="ai_careers.html">AI - Careers</a></li>
-						</ul>
-					</nav>
-
-				</div>
+						<p>Everyone’s talking about how AI will change jobs. But what does that actually look like for a specific role — a data analyst, a nurse, a teacher, a copywriter? This tool tries to answer that.</p>
+					</div>
+				</section>
 			</div>
-
 		</div>
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-	</body>
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner">
+
+				<!-- Search -->
+				<section id="search" class="alt">
+					<form id="search-form">
+						<input type="text" name="query" id="query" placeholder="Search" />
+					</form>
+				</section>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<header class="major">
+						<h2>Menu</h2>
+					</header>
+					<ul>
+						<li><a href="index.html">Homepage</a></li>
+						<li><a href="#library">AI - Thought Library</a></li>
+						<li><span class="opener">AI - Tool Up</span>
+							<ul>
+								<li><a href="writing.html">Writing</a></li>
+								<li><a href="#">Audio</a></li>
+								<li><a href="#">Image</a></li>
+								<li><a href="#">Video</a></li>
+							</ul>
+						</li>
+						<li><a href="#">AI - Predictions</a></li>
+						<li><span class="opener">AI - By Sector</span>
+							<ul>
+								<li><a href="temp.html">Marketing</a></li>
+								<li><a href="#">Technology</a></li>
+								<li><a href="#">Finance</a></li>
+								<li><a href="#">Defence</a></li>
+								<li><a href="#">Industrial</a></li>
+								<li><a href="#">Healthcare</a></li>
+								<li><a href="#">Materials</a></li>
+								<li><a href="#">Energy</a></li>
+							</ul>
+						</li>
+						<li><a href="#">AI - Use Cases</a></li>
+						<li><a href="c1_cdp.html">AI - CDPs</a></li>
+						<li><a href="es_index.html">AI - Ethics & Society</a></li>
+						<li><a href="d1_defined.html">AI - Defined</a></li>
+						<li><a href="ai_careers.html">AI - Careers</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
 </html>
